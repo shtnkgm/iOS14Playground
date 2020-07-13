@@ -11,11 +11,7 @@ struct ContentView: View {
     
     @AppStorage("emoji", store: UserDefaults(suiteName: "group.com.shotanakagami.iOS14Playground")) var emojiData: Data = Data()
     
-    let emojis: [Emoji] =  [
-        .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk."),
-        .init(icon: "🐱", name: "Cat", description: "I'm a cute cat! Play with me."),
-        .init(icon: "🐷", name: "Pig", description: "I'm a cute pig! Give me lunch.")
-    ]
+    let emojis: [Emoji] =  [.dog, .cat, .pig]
     
     var body: some View {
         VStack(spacing: 30) {

@@ -45,7 +45,10 @@ struct WidgetEntryView: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            EmojiView(emoji: entry.emoji)
+            VStack {
+                EmojiView(emoji: entry.emoji)
+            }
+            
             
         case .systemMedium:
             HStack(spacing: 30) {
@@ -67,7 +70,7 @@ struct WidgetEntryView: View {
             }
             
         default:
-            EmojiView(emoji: entry.emoji)
+            fatalError()
         }
     }
 }
@@ -87,8 +90,24 @@ struct MyWidget: Widget {
     }
 }
 
-struct Widget_Previews: PreviewProvider {
+struct WidgetSmall_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetEntryView(entry: .init(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk."))).previewLayout(.sizeThatFits)
+        WidgetEntryView(entry: .init(emoji: .pig))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
+
+struct WidgetMedium_Previews: PreviewProvider {
+    static var previews: some View {
+        WidgetEntryView(entry: .init(emoji: .dog))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
+    }
+}
+
+struct WidgetLarge_Previews: PreviewProvider {
+    static var previews: some View {
+        WidgetEntryView(entry: .init(emoji: .cat))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
+    }
+}
+
