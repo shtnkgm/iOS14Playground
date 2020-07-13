@@ -15,6 +15,15 @@
 		DAFE4ACB24BBEF0200E77266 /* iOS14PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ACA24BBEF0200E77266 /* iOS14PlaygroundUITests.swift */; };
 		DAFE4ADB24BBF03200E77266 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADA24BBF03200E77266 /* Emoji.swift */; };
 		DAFE4ADD24BBF1EE00E77266 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */; };
+		DAFE4AE624BBF5BE00E77266 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFE4AE524BBF5BE00E77266 /* WidgetKit.framework */; };
+		DAFE4AE824BBF5BE00E77266 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFE4AE724BBF5BE00E77266 /* SwiftUI.framework */; };
+		DAFE4AEB24BBF5BE00E77266 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4AEA24BBF5BE00E77266 /* Widget.swift */; };
+		DAFE4AEE24BBF5C100E77266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE4AED24BBF5C100E77266 /* Assets.xcassets */; };
+		DAFE4AF024BBF5C100E77266 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4AEC24BBF5BE00E77266 /* Widget.intentdefinition */; };
+		DAFE4AF124BBF5C100E77266 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4AEC24BBF5BE00E77266 /* Widget.intentdefinition */; };
+		DAFE4AF424BBF5C100E77266 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAFE4AE324BBF5BE00E77266 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAFE4AF924BBF69A00E77266 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADA24BBF03200E77266 /* Emoji.swift */; };
+		DAFE4AFA24BBF6B100E77266 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,28 @@
 			remoteGlobalIDString = DAFE4AA924BBEF0100E77266;
 			remoteInfo = iOS14Playground;
 		};
+		DAFE4AF224BBF5C100E77266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFE4AA224BBEF0100E77266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFE4AE224BBF5BE00E77266;
+			remoteInfo = WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAFE4AF824BBF5C100E77266 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAFE4AF424BBF5C100E77266 /* WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DAFE4AAA24BBEF0100E77266 /* iOS14Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS14Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +80,14 @@
 		DAFE4ADA24BBF03200E77266 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		DAFE4ADE24BBF46D00E77266 /* iOS14Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS14Playground.entitlements; sourceTree = "<group>"; };
+		DAFE4AE324BBF5BE00E77266 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFE4AE524BBF5BE00E77266 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DAFE4AE724BBF5BE00E77266 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DAFE4AEA24BBF5BE00E77266 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		DAFE4AEC24BBF5BE00E77266 /* Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget.intentdefinition; sourceTree = "<group>"; };
+		DAFE4AED24BBF5C100E77266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAFE4AEF24BBF5C100E77266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFE4AFB24BBF74500E77266 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,15 +112,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFE4AE024BBF5BE00E77266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFE4AE824BBF5BE00E77266 /* SwiftUI.framework in Frameworks */,
+				DAFE4AE624BBF5BE00E77266 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DAFE4AA124BBEF0100E77266 = {
 			isa = PBXGroup;
 			children = (
+				DAFE4AFB24BBF74500E77266 /* WidgetExtension.entitlements */,
 				DAFE4AAC24BBEF0100E77266 /* iOS14Playground */,
 				DAFE4ABE24BBEF0200E77266 /* iOS14PlaygroundTests */,
 				DAFE4AC924BBEF0200E77266 /* iOS14PlaygroundUITests */,
+				DAFE4AE924BBF5BE00E77266 /* Widget */,
+				DAFE4AE424BBF5BE00E77266 /* Frameworks */,
 				DAFE4AAB24BBEF0100E77266 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +143,7 @@
 				DAFE4AAA24BBEF0100E77266 /* iOS14Playground.app */,
 				DAFE4ABB24BBEF0200E77266 /* iOS14PlaygroundTests.xctest */,
 				DAFE4AC624BBEF0200E77266 /* iOS14PlaygroundUITests.xctest */,
+				DAFE4AE324BBF5BE00E77266 /* WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +189,26 @@
 			path = iOS14PlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		DAFE4AE424BBF5BE00E77266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE4AE524BBF5BE00E77266 /* WidgetKit.framework */,
+				DAFE4AE724BBF5BE00E77266 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAFE4AE924BBF5BE00E77266 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE4AEA24BBF5BE00E77266 /* Widget.swift */,
+				DAFE4AEC24BBF5BE00E77266 /* Widget.intentdefinition */,
+				DAFE4AED24BBF5C100E77266 /* Assets.xcassets */,
+				DAFE4AEF24BBF5C100E77266 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,10 +219,12 @@
 				DAFE4AA624BBEF0100E77266 /* Sources */,
 				DAFE4AA724BBEF0100E77266 /* Frameworks */,
 				DAFE4AA824BBEF0100E77266 /* Resources */,
+				DAFE4AF824BBF5C100E77266 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAFE4AF324BBF5C100E77266 /* PBXTargetDependency */,
 			);
 			name = iOS14Playground;
 			productName = iOS14Playground;
@@ -194,6 +267,23 @@
 			productReference = DAFE4AC624BBEF0200E77266 /* iOS14PlaygroundUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DAFE4AE224BBF5BE00E77266 /* WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFE4AF524BBF5C100E77266 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildPhases = (
+				DAFE4ADF24BBF5BE00E77266 /* Sources */,
+				DAFE4AE024BBF5BE00E77266 /* Frameworks */,
+				DAFE4AE124BBF5BE00E77266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtension;
+			productName = WidgetExtension;
+			productReference = DAFE4AE324BBF5BE00E77266 /* WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +304,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = DAFE4AA924BBEF0100E77266;
 					};
+					DAFE4AE224BBF5BE00E77266 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = DAFE4AA524BBEF0100E77266 /* Build configuration list for PBXProject "iOS14Playground" */;
@@ -232,6 +325,7 @@
 				DAFE4AA924BBEF0100E77266 /* iOS14Playground */,
 				DAFE4ABA24BBEF0200E77266 /* iOS14PlaygroundTests */,
 				DAFE4AC524BBEF0200E77266 /* iOS14PlaygroundUITests */,
+				DAFE4AE224BBF5BE00E77266 /* WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +354,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFE4AE124BBF5BE00E77266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFE4AEE24BBF5C100E77266 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -271,6 +373,7 @@
 				DAFE4ADD24BBF1EE00E77266 /* EmojiView.swift in Sources */,
 				DAFE4AB024BBEF0100E77266 /* ContentView.swift in Sources */,
 				DAFE4AAE24BBEF0100E77266 /* iOS14PlaygroundApp.swift in Sources */,
+				DAFE4AF124BBF5C100E77266 /* Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +393,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFE4ADF24BBF5BE00E77266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFE4AF924BBF69A00E77266 /* Emoji.swift in Sources */,
+				DAFE4AFA24BBF6B100E77266 /* EmojiView.swift in Sources */,
+				DAFE4AF024BBF5C100E77266 /* Widget.intentdefinition in Sources */,
+				DAFE4AEB24BBF5BE00E77266 /* Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +416,11 @@
 			isa = PBXTargetDependency;
 			target = DAFE4AA924BBEF0100E77266 /* iOS14Playground */;
 			targetProxy = DAFE4AC724BBEF0200E77266 /* PBXContainerItemProxy */;
+		};
+		DAFE4AF324BBF5C100E77266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFE4AE224BBF5BE00E77266 /* WidgetExtension */;
+			targetProxy = DAFE4AF224BBF5C100E77266 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +544,7 @@
 		DAFE4AD024BBEF0200E77266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS14Playground/iOS14Playground.entitlements;
@@ -448,6 +568,7 @@
 		DAFE4AD124BBEF0200E77266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS14Playground/iOS14Playground.entitlements;
@@ -552,6 +673,50 @@
 			};
 			name = Release;
 		};
+		DAFE4AF624BBF5C100E77266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U533Y3X82;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotanakagami.iOS14Playground.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAFE4AF724BBF5C100E77266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U533Y3X82;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotanakagami.iOS14Playground.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -587,6 +752,15 @@
 			buildConfigurations = (
 				DAFE4AD624BBEF0200E77266 /* Debug */,
 				DAFE4AD724BBEF0200E77266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFE4AF524BBF5C100E77266 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFE4AF624BBF5C100E77266 /* Debug */,
+				DAFE4AF724BBF5C100E77266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
