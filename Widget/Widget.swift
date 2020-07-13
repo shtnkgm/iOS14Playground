@@ -89,6 +89,6 @@ struct MyWidget: Widget {
 
 struct Widget_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetEntryView(entry: .init(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk.")))
+        WidgetEntryView(entry: .init(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk."))).previewLayout(.sizeThatFits)
     }
 }

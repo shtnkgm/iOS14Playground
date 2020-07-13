@@ -21,6 +21,8 @@ struct EmojiView: View {
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        return EmojiView(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk."))
+        return Group {
+            EmojiView(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk.")).previewLayout(.sizeThatFits)
+        }
     }
 }
