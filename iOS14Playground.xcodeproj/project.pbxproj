@@ -13,6 +13,8 @@
 		DAFE4AB524BBEF0200E77266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE4AB424BBEF0200E77266 /* Preview Assets.xcassets */; };
 		DAFE4AC024BBEF0200E77266 /* iOS14PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ABF24BBEF0200E77266 /* iOS14PlaygroundTests.swift */; };
 		DAFE4ACB24BBEF0200E77266 /* iOS14PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ACA24BBEF0200E77266 /* iOS14PlaygroundUITests.swift */; };
+		DAFE4ADB24BBF03200E77266 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADA24BBF03200E77266 /* Emoji.swift */; };
+		DAFE4ADD24BBF1EE00E77266 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		DAFE4AC624BBEF0200E77266 /* iOS14PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS14PlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE4ACA24BBEF0200E77266 /* iOS14PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS14PlaygroundUITests.swift; sourceTree = "<group>"; };
 		DAFE4ACC24BBEF0200E77266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFE4ADA24BBF03200E77266 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		DAFE4ADE24BBF46D00E77266 /* iOS14Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS14Playground.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +100,11 @@
 		DAFE4AAC24BBEF0100E77266 /* iOS14Playground */ = {
 			isa = PBXGroup;
 			children = (
+				DAFE4ADE24BBF46D00E77266 /* iOS14Playground.entitlements */,
 				DAFE4AAD24BBEF0100E77266 /* iOS14PlaygroundApp.swift */,
 				DAFE4AAF24BBEF0100E77266 /* ContentView.swift */,
+				DAFE4ADC24BBF1EE00E77266 /* EmojiView.swift */,
+				DAFE4ADA24BBF03200E77266 /* Emoji.swift */,
 				DAFE4AB124BBEF0200E77266 /* Assets.xcassets */,
 				DAFE4AB624BBEF0200E77266 /* Info.plist */,
 				DAFE4AB324BBEF0200E77266 /* Preview Content */,
@@ -259,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFE4ADB24BBF03200E77266 /* Emoji.swift in Sources */,
+				DAFE4ADD24BBF1EE00E77266 /* EmojiView.swift in Sources */,
 				DAFE4AB024BBEF0100E77266 /* ContentView.swift in Sources */,
 				DAFE4AAE24BBEF0100E77266 /* iOS14PlaygroundApp.swift in Sources */,
 			);
@@ -417,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS14Playground/iOS14Playground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS14Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = 8U533Y3X82;
@@ -439,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS14Playground/iOS14Playground.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS14Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = 8U533Y3X82;
