@@ -25,7 +25,7 @@ struct Provider: TimelineProvider {
     func timeline(with context: Context, completion: @escaping (Timeline<EmojiEntry>) -> ()) {
         guard let emoji = try? JSONDecoder().decode(Emoji.self, from: emojiData) else { return }
         let entry = EmojiEntry(emoji: emoji)
-        let timeline = Timeline(entries: [entry], policy: .never)
+        let timeline = Timeline(entries: [entry], policy: .atEnd)
         completion(timeline)
     }
 }
@@ -39,8 +39,36 @@ struct PlaceholderView: View {
 struct WidgetEntryView: View {
     let entry: Provider.Entry
     
+    @Environment(\.widgetFamily) var family
+    
+    @ViewBuilder
     var body: some View {
-        EmojiView(emoji: entry.emoji)
+        switch family {
+        case .systemSmall:
+            EmojiView(emoji: entry.emoji)
+            
+        case .systemMedium:
+            HStack(spacing: 30) {
+                EmojiView(emoji: entry.emoji)
+                Text(entry.emoji.name)
+                    .font(.largeTitle)
+            }
+            
+        case .systemLarge:
+            VStack(spacing: 30) {
+                HStack(spacing: 30) {
+                    EmojiView(emoji: entry.emoji)
+                    Text(entry.emoji.name)
+                        .font(.largeTitle)
+                }
+                Text(entry.emoji.description)
+                    .font(.title2)
+                    .padding()
+            }
+            
+        default:
+            EmojiView(emoji: entry.emoji)
+        }
     }
 }
 
@@ -55,12 +83,12 @@ struct MyWidget: Widget {
             placeholder: PlaceholderView()
         ) { entry in
             WidgetEntryView(entry: entry)
-        }
+        }.supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
 
 struct Widget_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        WidgetEntryView(entry: .init(emoji: .init(icon: "🐶", name: "Dog", description: "I'm a cute dog! I want to go for a walk.")))
     }
 }
